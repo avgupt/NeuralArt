@@ -26,7 +26,7 @@ Steps to follow to convert your image into stylized image in our NeuralArt web a
 * CLICK CREATE           :- Your image will be stylized.
 
 ## Tech stuff to be used :
-* Tenserflow (To stylize the image)
+* Tensorflow (To stylize the image)
 * django or flask (to build the web app)
 
 ## Extenstion Aimed to be done in future:
