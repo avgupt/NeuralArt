@@ -24,9 +24,9 @@ The below shows how it looks :
 
 ## How the Web App works?
 Steps to follow to convert your image into stylized image in our NeuralArt web app :
-* UPLOAD IMAGE           :- Upload your image which is to converted (Content Image)
-* SELECT OR UPLOAD IMAGE :- Select the style image from the provided style images or Upload your own style images
-* CLICK CREATE           :- Your image will be stylized.
+* **UPLOAD IMAGE**           :- Upload your image which is to converted (Content Image)
+* **SELECT OR UPLOAD IMAGE** :- Select the style image from the provided style images or Upload your own style images
+* **CLICK CREATE**           :- Your image will be stylized.
 
 ## Tech stuff to be used :
 * Tensorflow (To stylize the image)
