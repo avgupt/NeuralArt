@@ -6,10 +6,10 @@ Avishi, Vaseem Naazleen, Shivangi Tomar
 
 ## Neural Style Transfer
 Neural style transfer is an optimization technique takes two images 
-* a content image 
-* a style reference image (such as an artwork by a famous painter) 
+* A content image 
+* A style reference image (such as an artwork by a famous painter) 
 and blend them together so the output image looks like the content image, but  “painted” in the style of the style reference image.
-* A Neural Algorithm of Artistic Style that can separate and recombine the content and style of natural images.
+* Gatys et al(A Neural Algorithm of Artistic Style) introduced a way to use Convolutional Neural Network (CNN) to separate and recombine the image content and style of natural images by extracting image representations from response layers in VGG networks.
 
 The below shows how it looks :
 
