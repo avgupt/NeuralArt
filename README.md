@@ -30,7 +30,7 @@ Steps to follow to convert your image into stylized image in our NeuralArt web a
 
 ## Tech stuff to be used :
 * Tensorflow (To stylize the image)
-* django or flask (to build the web app)
+* django or flask (To build the web app)
 
 ## Extenstion Aimed to be done in future:
 
