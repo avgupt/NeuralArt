@@ -17,6 +17,9 @@ The below shows how it looks :
 
 ### Examples of Neural Style transfer
 
+* A - Content Image
+* B, C, D, E, F - Stylized Images (Style Image at Right corner)
+
 ![examples](https://user-images.githubusercontent.com/54474853/85428804-5fcc3c00-b59b-11ea-9383-ae4a86f42925.jpeg)
 
 ## How the Web App works?
