@@ -34,7 +34,7 @@ Teens who want to convert their images into interesting paintings and post them 
 
 ## Tech stuff to be used :
 * Tensorflow (To stylize the image)
-* flutter (To build the mobile app)
+* Flutter (To build the mobile app)
 ## REFERENCES :
 * [Wikipedia NST](https://en.wikipedia.org/wiki/Neural_Style_Transfer#NST)
 * [A Neural Algorithm of Artistic Style (Gatys et al.)](https://arxiv.org/abs/1508.06576)
