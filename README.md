@@ -28,6 +28,10 @@ Steps to follow to convert your image into stylized image in our NeuralArt web a
 2. **SELECT OR UPLOAD IMAGE** :- Select the style image from the provided style images or Upload your own style images
 3. **CLICK CREATE**           :- Your image will be stylized.
 
+## Target Audience:
+
+Teens who want to convert their images into interesting paintings and post them on Social media.
+
 ## Tech stuff to be used :
 * Tensorflow (To stylize the image)
 * django or flask (To build the web app)
