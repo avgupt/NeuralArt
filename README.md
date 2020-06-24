@@ -1,17 +1,17 @@
 # NeuralArt 
-A simple Mobile application implements style transfer
+A simple Mobile application implements style transfer.
 
 ## Group 38
-Avishi, Vaseem Naazleen, Shivangi Tomar
+Avishi, Vaseem Naazleen, Shivangi Tomar.
 
 ## Neural Style Transfer
 Neural style transfer is an optimization technique takes two images 
-* A content image 
+* A content image .
 * A style reference image (such as an artwork by a famous painter) 
 and blend them together so the output image looks like the content image, but  “painted” in the style of the style reference image.
 * Gatys et al(A Neural Algorithm of Artistic Style) introduced a way to use Convolutional Neural Network (CNN) to separate and recombine the image content and style of natural images by extracting image representations from response layers in VGG networks.
 
-The below shows how it looks :
+The below shows how style transfer looks :
 
 ![nst](https://user-images.githubusercontent.com/54474853/85428391-c13fdb00-b59a-11ea-9769-01affe0839ec.png)
 
@@ -24,8 +24,8 @@ The below shows how it looks :
 
 ## How the NeuralArt works?
 Steps to follow to convert your image into stylized image in our NeuralArt web app :
-1. **UPLOAD IMAGE**           :- Upload your image which is to converted (Content Image)
-2. **SELECT OR UPLOAD IMAGE** :- Select the style image from the provided style images or Upload your own style images
+1. **UPLOAD IMAGE**           :- Upload your image which is to converted (Content Image).
+2. **SELECT OR UPLOAD IMAGE** :- Select the style image from the provided style images or Upload your own style images.
 3. **CLICK CREATE**           :- Your image will be stylized.
 
 ## Target Audience:
@@ -41,5 +41,5 @@ Teens who want to convert their images into interesting paintings and post them 
 * [TensorFlow NST Tutorial](https://www.tensorflow.org/tutorials/generative/style_transfer)
 ## Extenstion Aimed to be done in future:
 
-Extend the mobile application to stylize videos
+Extend the mobile application to stylize videos.
 
