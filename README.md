@@ -21,6 +21,10 @@ The below shows how style transfer looks :
 
 ![examples](https://user-images.githubusercontent.com/54474853/85428804-5fcc3c00-b59b-11ea-9383-ae4a86f42925.jpeg)
 
+## How Neural Style Transfer works?
+
+![how_st_works](/uploads/d4befc330b51ae28919f4cbdb0aec383/how_st_works.PNG)
+
 ## REFERENCES :
 * [Wikipedia NST](https://en.wikipedia.org/wiki/Neural_Style_Transfer#NST)
 * [A Neural Algorithm of Artistic Style (Gatys et al.)](https://arxiv.org/abs/1508.06576)
