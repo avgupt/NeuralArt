@@ -18,7 +18,7 @@ WIDTH = 512
 SHAPE = (WIDTH, HEIGHT)
 
 content_img_path = 'img/alia.jpg'
-style_img_path = 'img/images.jpg'
+style_img_path = 'img/paint_girl.jpg'
 
 # define a func to load images
 def load_image(image_path):
