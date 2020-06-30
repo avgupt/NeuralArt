@@ -27,5 +27,6 @@ The below shows how style transfer looks :
 
 ## REFERENCES :
 * [Wikipedia NST](https://en.wikipedia.org/wiki/Neural_Style_Transfer#NST)
-* [A Neural Algorithm of Artistic Style (Gatys et al.)](https://arxiv.org/abs/1508.06576)
+* [A Neural Algorithm of Artistic Style (Gatys et al.)](https://arxiv.org/pdf/1508.06576.pdf)
 * [TensorFlow NST Tutorial](https://www.tensorflow.org/tutorials/generative/style_transfer)
+* [Keras  NST Tutorial](https://keras.io/examples/generative/neural_style_transfer/)
