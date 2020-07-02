@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.6.25)  2 JUL 2020 12:39
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.6.25)  2 JUL 2020 12:50
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -831,7 +831,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 <image.jpg, id=82, 411.5375pt x 123.46124pt>
 File: image.jpg Graphic file (type jpg)
 <use image.jpg>
-Package luatex.def Info: image.jpg  used on input line 30.
+Package luatex.def Info: image.jpg  used on input line 32.
 (luatex.def)             Requested size: 284.52756pt x 85.35788pt.
  [3
 
@@ -857,11 +857,11 @@ Package luatex.def Info: image.jpg  used on input line 30.
 \tf@snm=\write8
 
 \openout8 = main.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 79.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 79.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 79.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 79.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
@@ -872,7 +872,7 @@ Here is how much of LuaTeX's memory you used:
  769 words of node memory still in use:
    12 hlist, 6 vlist, 2 rule, 1 local_par, 15 glue, 2 kern, 8 penalty, 10 glyph,
  57 glue_spec, 3 write, 4 pdf_colorstack nodes
-   avail lists: 1:1,2:27,3:293,4:139,5:111,6:39,7:818,8:47,9:242,10:11,11:49,12:
+   avail lists: 1:1,2:27,3:293,4:139,5:112,6:39,7:858,8:47,9:242,10:11,11:49,12:
 1
  21103 multiletter control sequences out of 65536+600000
  20 fonts using 839615 bytes
@@ -880,7 +880,7 @@ Here is how much of LuaTeX's memory you used:
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/pub
 lic/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmss8.pfb>
-Output written on main.pdf (9 pages, 84511 bytes).
+Output written on main.pdf (9 pages, 85365 bytes).
 
 PDF statistics: 286 PDF objects out of 1000 (max. 8388607)
  257 compressed objects within 3 object streams
