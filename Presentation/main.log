@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.6.25)  2 JUL 2020 12:26
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.6.25)  2 JUL 2020 12:30
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -649,20 +649,16 @@ File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \beamer@dimb=\dimen186
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty)))
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeAnnArbor.sty
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewolverine.sty)) (./main.aux)
-Runaway argument?
-{\headcommand {\beamer@framepages 
-! File ended while scanning use of \@writefile.
-<inserted text> 
-\par 
-l.11 \begin{document}
-                   
-? 
-
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeRochester.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
+\beamer@sidebarwidth=\dimen187
+\beamer@headheight=\dimen188
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerectangles.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty))
+(./main.aux)
 \openout1 = main.aux
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
@@ -679,6 +675,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
 *geometry* verbose mode - [ preamble ] result:
@@ -687,14 +684,14 @@ LaTeX Font Info:    ... okay on input line 11.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(14.0998pt, 335.99577pt, 14.0998pt)
+* h-part:(L,W,R)=(28.45274pt, 307.28987pt, 28.45274pt)
 * v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
 * \paperwidth=364.19536pt
 * \paperheight=273.14662pt
-* \textwidth=335.99577pt
+* \textwidth=307.28987pt
 * \textheight=244.6939pt
-* \oddsidemargin=-58.1702pt
-* \evensidemargin=-58.1702pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
@@ -716,13 +713,13 @@ LaTeX Font Info:    ... okay on input line 11.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count156
-\scratchdimen=\dimen187
+\scratchdimen=\dimen189
 \scratchbox=\box54
 \nofMPsegments=\count157
 \nofMParguments=\count158
 \everyMPshowfont=\toks44
 \MPscratchCnt=\count159
-\MPscratchDim=\dimen188
+\MPscratchDim=\dimen190
 \MPnumerator=\count160
 \makeMPintoPDFobject=\count161
 \everyMPtoPDFconversion=\toks45
@@ -834,7 +831,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-<image.jpg, id=82, 411.5375pt x 123.46124pt>
+<image.jpg, id=72, 411.5375pt x 123.46124pt>
 File: image.jpg Graphic file (type jpg)
 <use image.jpg>
 Package luatex.def Info: image.jpg  used on input line 30.
@@ -873,23 +870,22 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 17754 strings out of 494383
+ 17708 strings out of 494383
  100000,460012 words of node,token memory allocated
- 1225 words of node memory still in use:
-   27 hlist, 8 vlist, 6 rule, 4 local_par, 37 glue, 6 kern, 13 penalty, 10 glyph
-, 57 glue_spec, 3 write, 20 pdf_colorstack nodes
-   avail lists: 1:1,2:30,3:298,4:155,5:119,6:42,7:892,8:51,9:259,10:11,11:57,12:
+ 948 words of node memory still in use:
+   18 hlist, 7 vlist, 4 rule, 2 local_par, 22 glue, 4 kern, 9 penalty, 10 glyph,
+ 57 glue_spec, 3 write, 12 pdf_colorstack nodes
+   avail lists: 1:1,2:26,3:133,4:108,5:101,6:33,7:861,8:41,9:157,10:10,11:57,12:
 1
- 21093 multiletter control sequences out of 65536+600000
+ 21040 multiletter control sequences out of 65536+600000
  20 fonts using 839615 bytes
- 48i,15n,59p,770b,610s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 48i,14n,59p,770b,600s stack positions out of 5000i,500n,10000p,200000b,100000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/pub
-lic/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmss8.pfb>
-Output written on main.pdf (9 pages, 85293 bytes).
+lic/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb>
+Output written on main.pdf (9 pages, 65979 bytes).
 
-PDF statistics: 286 PDF objects out of 1000 (max. 8388607)
- 257 compressed objects within 3 object streams
+PDF statistics: 266 PDF objects out of 1000 (max. 8388607)
+ 242 compressed objects within 3 object streams
  19 named destinations out of 1000 (max. 131072)
- 56 words of extra memory for PDF output out of 10000 (max. 100000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 100000000)
 
