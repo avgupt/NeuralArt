@@ -1,7 +1,7 @@
 # NeuralArt 
 
 ## Group 38
-Avishi, Vaseem Naazleen, Shivangi Tomar.
+Avishi Gupta, Vaseem Naazleen, Shivangi Tomar.
 
 ## Neural Style Transfer
 Neural style transfer is an optimization technique takes two images 
