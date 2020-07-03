@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.7.1)  3 JUL 2020 07:09
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.7.1)  3 JUL 2020 08:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -662,10 +662,11 @@ Package: amsthm 2017/10/31 v2.20.4
 \beamer@dimb=\dimen189
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty)))
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeAnnArbor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeMadrid.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewolverine.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty))
 (./main.aux)
 \openout1 = `main.aux'.
 
@@ -812,18 +813,22 @@ Dictionary: translator-theorem-dictionary, Language: English
 
 ] [2
 
-] [3
-
 ]
 File: image.jpg Graphic file (type bmp)
 <image.jpg>
- [4
+ [3
+
+] [4
 
 ] [5
 
 ] [6
 
 ] [7
+
+] [8
+
+] [9
 
 ]
 \tf@nav=\write6
@@ -835,19 +840,19 @@ File: image.jpg Graphic file (type bmp)
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 83.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 83.
  (./main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 74.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 74.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 83.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 83.
  ) 
 Here is how much of TeX's memory you used:
- 19818 strings out of 494988
- 358695 string characters out of 6178639
- 432631 words of memory out of 5000000
- 23298 multiletter control sequences out of 15000+600000
+ 19835 strings out of 494988
+ 359068 string characters out of 6178639
+ 431839 words of memory out of 5000000
+ 23312 multiletter control sequences out of 15000+600000
  4048 words of font info for 21 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 48i,15n,57p,771b,604s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,15n,57p,771b,592s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (7 pages).
+Output written on main.pdf (9 pages).
