@@ -1,55 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <title>
-    {% block title %}{% endblock %}
-  </title>
-  <style>
-    {% block css %} {% endblock %}
-  </style>
-</head>
-<body>
-  <div class="container">
-      <div class="header">
-        <div class="navbar navbar-inverse my-nav" role="navigation"> 
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">Neural Art</a>
-          </div>
-      
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="/">Home</a></li>
-              <li><a href="/stylize">Stylize</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/contact">Contact</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="https://arxiv.org/abs/1508.06576">Research Paper</a></li>
-                  <li><a href="https://www.tensorflow.org/tutorials/generative/style_transfer">Tenser Flow</a></li>
-                  <li><a href="https://gitlab.com/vaseem_naazleen_shaik/neural-style-transfer">GitLab Repo</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!--/.nav-collapse -->
+<html lang=en>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <title>
+            {% block title%} {% endblock %}
+        </title>
+        <style>
+            {% block css %} {% endblock %}
+            .nav-item {
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+            .block {
+                margin-right: 100px;
+                margin-left: 100px;
+                padding-right: 100px
+                padding-left: 100px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="/">Neural Art</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="/about">About</a>
+                    <a class="nav-item nav-link" href="/stylize">Stylize</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Resources
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="https://arxiv.org/abs/1508.06576">Research Paper</a>
+                          <a class="dropdown-item" href="https://www.tensorflow.org/tutorials/generative/style_transfer">Tenser Flow</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="https://gitlab.com/vaseem_naazleen_shaik/neural-style-transfer">GitLab Repo</a>
+                        </div>
+                      </div>
+                </div>
+                </div>
+              </nav>
+              {% block carousel %} {% endblock %}
+              <div class="block">
+              {% block body%} {% endblock %}
+              </div>
         </div>
-        {% block carousel%} {% endblock %}
-      </div>
 
-     {% block body %} {% endblock %}
-  </div>
-	
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-</body>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
 </html>
