@@ -9,7 +9,7 @@
         width: 170px;
         position: fixed;
         z-index: 1;
-        margin-top: 40px;
+        margin-top: 15px;
         border-radius: 8px;
         background: #343a40;
         overflow-x: hidden;
@@ -28,7 +28,23 @@
         color: #FFF;
         border-left: 4px solid #b4aa11;
     }
-      
+
+    .pic-box {
+        position: fixed;
+        z-index: 1;
+        margin-top: 15px;
+        margin-left: 185px;
+        border-radius: 8px;
+        background: #343a40;
+        overflow-x: hidden;
+        padding: 8px 0;
+        color: #FFF;
+    }
+
+    .box-text {
+        margin: 40px;
+    }
+
 {% endblock %}
 
 {% block fullwidth %}
@@ -37,7 +53,16 @@
         <a>Add content photo</a>
         <a>Add style photo</a>
     </div>
-    <!-- $('body').css({"background-color":"#23262a"}); -->
+    
+    <div class="pic-box">
+        <div class="box-text">
+            <h2>Welcome to Neural Art Photo Editor</h2>
+            <br>
+            <p>
+                Choose content and style image
+            </p>
+        </div>
+    </div>
 
 {% endblock %}
 
