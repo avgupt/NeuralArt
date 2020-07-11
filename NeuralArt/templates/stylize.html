@@ -2,6 +2,45 @@
 
 {% block title %} Stylize {% endblock %}
 
-{% block body %} 
+{% block css %}
 
+    
+    .sidenav {
+        width: 170px;
+        position: fixed;
+        z-index: 1;
+        margin-top: 40px;
+        border-radius: 8px;
+        background: #343a40;
+        overflow-x: hidden;
+        padding: 8px 0;
+    }
+
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        color: rgba(255,255,255,.75);
+        display: block;
+    }
+
+    .sidenav a:hover {
+        color: #FFF;
+        border-left: 4px solid #b4aa11;
+    }
+      
+{% endblock %}
+
+{% block fullwidth %}
+
+    <div class="sidenav">
+        <a>Add content photo</a>
+        <a>Add style photo</a>
+    </div>
+    <!-- $('body').css({"background-color":"#23262a"}); -->
+
+{% endblock %}
+
+{% block script %}
+    document.body.style.backgroundColor = "#23262a";
 {% endblock %}
