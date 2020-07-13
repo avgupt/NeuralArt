@@ -30,6 +30,19 @@ h1 {
   padding-bottom: 10px;
 }
 
+.footer {
+  background-color: #343a40;
+  height: 200px;
+}
+
+.footer p {
+  color: white;
+}
+
+.footer a {
+  color: white;
+}
+
 {% endblock %}
 
 {% block fullwidth %}
@@ -133,10 +146,16 @@ h1 {
 
   </div>
 
-  <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-right"><a href="/home">Back to top</a></p>
-    <p># info and links comes here</p>
+{% endblock %}
+
+{% block footer%}
+
+  <footer class="container-fluid footer">
+    <p>
+      <a class="float-right" href="/home">Back to top</a>
+      # info and links comes here
+    </p>
+
   </footer>
 
 {% endblock %}
