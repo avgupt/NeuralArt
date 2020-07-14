@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.6.25)  15 JUL 2020 00:07
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.6.25)  15 JUL 2020 00:16
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -836,29 +836,18 @@ Package luatex.def Info: image.jpg  used on input line 34.
  [3
 
 <./image.jpg>]
+<baby.jpeg, id=110, 536.19678pt x 613.12935pt>
+File: baby.jpeg Graphic file (type jpg)
+<use baby.jpeg>
+Package luatex.def Info: baby.jpeg  used on input line 41.
+(luatex.def)             Requested size: 256.0748pt x 292.8112pt.
 
-LaTeX Warning: File `image.jpeg' not found on input line 41.
-
-
-! Package luatex.def Error: File `image.jpeg' not found: using draft setting.
-
-See the luatex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.41 \end{frame}
-              
-? 
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 41.
-(/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
-File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Overfull \vbox (70.36574pt too high) detected at line 41
+Overfull \vbox (78.57086pt too high) detected at line 41
  []
 
 [4
 
-] [5
+<./baby.jpeg>] [5
 
 ] [6
 
@@ -890,24 +879,23 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 17815 strings out of 494383
+ 17783 strings out of 494383
  100000,460012 words of node,token memory allocated
  769 words of node memory still in use:
    12 hlist, 6 vlist, 2 rule, 1 local_par, 15 glue, 2 kern, 8 penalty, 10 glyph,
  57 glue_spec, 3 write, 4 pdf_colorstack nodes
    avail lists: 1:1,2:27,3:293,4:139,5:112,6:39,7:768,8:47,9:242,10:11,11:43,12:
 1
- 21133 multiletter control sequences out of 65536+600000
- 21 fonts using 880947 bytes
+ 21109 multiletter control sequences out of 65536+600000
+ 20 fonts using 839615 bytes
  48i,15n,59p,770b,600s stack positions out of 5000i,500n,10000p,200000b,100000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/dvi
-ps/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-ss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (10 pages, 452328 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/pub
+lic/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmss8.pfb>
+Output written on main.pdf (10 pages, 790573 bytes).
 
-PDF statistics: 318 PDF objects out of 1000 (max. 8388607)
- 287 compressed objects within 3 object streams
+PDF statistics: 314 PDF objects out of 1000 (max. 8388607)
+ 283 compressed objects within 3 object streams
  21 named destinations out of 1000 (max. 131072)
  56 words of extra memory for PDF output out of 10000 (max. 100000000)
 
