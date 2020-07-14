@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.6.25)  15 JUL 2020 00:19
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.6.25)  15 JUL 2020 00:25
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -827,19 +827,13 @@ Dictionary: translator-theorem-dictionary, Language: English
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
-]
-<image.jpg, id=82, 536.19678pt x 613.12935pt>
-File: image.jpg Graphic file (type jpg)
-<use image.jpg>
-Package luatex.def Info: image.jpg  used on input line 34.
-(luatex.def)             Requested size: 85.35826pt x 97.59749pt.
- [3
+] [3
 
-<./image.jpg>]
-<baby.jpeg, id=110, 536.19678pt x 613.12935pt>
+]
+<baby.jpeg, id=109, 536.19678pt x 613.12935pt>
 File: baby.jpeg Graphic file (type jpg)
 <use baby.jpeg>
-Package luatex.def Info: baby.jpeg  used on input line 41.
+Package luatex.def Info: baby.jpeg  used on input line 38.
 (luatex.def)             Requested size: 170.71652pt x 195.20435pt.
  [4
 
@@ -865,33 +859,32 @@ Package luatex.def Info: baby.jpeg  used on input line 41.
 \tf@snm=\write8
 
 \openout8 = main.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 90.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
-
-(./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 90.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 90.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 89.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
+ (./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 89.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 89.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 17783 strings out of 494383
+ 17775 strings out of 494383
  100000,460012 words of node,token memory allocated
  769 words of node memory still in use:
    12 hlist, 6 vlist, 2 rule, 1 local_par, 15 glue, 2 kern, 8 penalty, 10 glyph,
  57 glue_spec, 3 write, 4 pdf_colorstack nodes
-   avail lists: 1:1,2:27,3:293,4:139,5:112,6:39,7:768,8:47,9:242,10:11,11:43,12:
+   avail lists: 1:1,2:27,3:293,4:139,5:112,6:39,7:736,8:47,9:242,10:11,11:43,12:
 1
- 21109 multiletter control sequences out of 65536+600000
+ 21105 multiletter control sequences out of 65536+600000
  20 fonts using 839615 bytes
  48i,15n,59p,770b,600s stack positions out of 5000i,500n,10000p,200000b,100000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/pub
 lic/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmss8.pfb>
-Output written on main.pdf (10 pages, 790575 bytes).
+Output written on main.pdf (10 pages, 433431 bytes).
 
-PDF statistics: 314 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 313 PDF objects out of 1000 (max. 8388607)
  283 compressed objects within 3 object streams
  21 named destinations out of 1000 (max. 131072)
  56 words of extra memory for PDF output out of 10000 (max. 100000000)
