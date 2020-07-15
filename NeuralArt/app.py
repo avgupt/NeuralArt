@@ -86,7 +86,7 @@ def file_upload():
     transformed = model(content, style)
     
     fname = transformed + '.jpg'
-    return render_template('file_uploaded.html', filename=fname)
+    return render_template('result.html', filename=fname)
 
 	
 if __name__ == "__main__":
