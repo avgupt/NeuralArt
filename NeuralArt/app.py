@@ -31,7 +31,7 @@ def about():
 
 @app.route('/stylize')
 def to_upload_page():
-    return render_template('to_upload.html')
+    return render_template('stylize.html')
     
 
 def tensor_to_image(tensor):
