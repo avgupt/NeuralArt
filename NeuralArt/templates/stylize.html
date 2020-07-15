@@ -15,17 +15,30 @@
         overflow-x: hidden;
     }
 
-    .sidenav a {
+    .sidenav button {
         padding: 6px 8px 6px 16px;
         text-decoration: none;
         font-size: 17px;
-        color: rgba(255,255,255,.75);
+        background-color: #343a40;
+        color: grey;
         display: block;
+        outline: none;
+        border: none;
+        width: 180px;
     }
 
-    .sidenav a:hover {
+    .sidenav button:hover {
         color: #FFF;
         border-left: 4px solid #b4aa11;
+    }
+
+    .submit-btn {
+        background: linear-gradient(180deg,#f1e41c,#b4aa11);;
+    }
+
+    .submit:btn {
+        opacity: 1 !important;
+        box-shadow: 0 5px 15px rgba(81,113,144,.4);
     }
 
     .pic-box {
@@ -76,8 +89,14 @@
 </div>
 
     <div class="sidenav">
-        <a>Add content photo</a>
-        <a>Add style photo</a>
+        <form action="/uploader" method="POST" enctype="multipart/form-data">       
+            <button  onclick="document.getElementById('contentFile').click()">Content Image</button>
+                <input type="file" name="contentFile" id="contentFile">
+            <button  onclick="document.getElementById('styleFile').click()">Style Image</button>
+                <input type="file" name="styleFile" id="styleFile">
+            <button  class = "submit-btn" onclick="document.getElementById('submitFiles').click()">Submit</button>
+                <input type="submit" value="Upload Image" name="submit" id="submitFiles">           
+        </form>
     </div>
     
     <div class="pic-box">

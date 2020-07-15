@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% block title %} Stylize {% endblock %}
+
+{% block css %}
+
+    
+    .sidenav {
+        width: 180px;
+        position: fixed;
+        z-index: 1;
+        margin: 15px;
+        border-radius: 8px;
+        background: #343a40;
+        overflow-x: hidden;
+    }
+
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        background-color: #343a40;
+        color: grey;
+        display: block;
+        outline: none;
+        border: none;
+        width: 180px;
+    }
+
+    .sidenav a:hover {
+        color: #FFF;
+        border-left: 4px solid #b4aa11;
+    }
+
+    .pic-box {
+        position: fixed;
+        z-index: 1;
+        margin-top: 15px;
+        margin-left: 210px;
+        border-radius: 8px;
+        background: #343a40;
+        overflow-x: hidden;
+        padding: 8px 0;
+        color: #FFF;
+    }
+
+    .box-text {
+        margin: 40px;
+    }
+
+{% endblock %}
+
+{% block fullwidth %}
+
+ <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                  <a class="navbar-brand" href="/">Neural Art</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                      <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-item nav-link" href="/about">About</a>
+                      <a class="nav-item nav-link active" href="/stylize">Stylize</a>
+                      <div class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Resources
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="https://arxiv.org/abs/1508.06576">Research Paper</a>
+                            <a class="dropdown-item" href="https://www.tensorflow.org/tutorials/generative/style_transfer">Tenser Flow</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://gitlab.com/vaseem_naazleen_shaik/neural-style-transfer">GitLab Repo</a>
+                          </div>
+                        </div>
+                  </div>
+                  </div>
+              </nav>
+</div>
+
+    <div class="sidenav">
+        <a href="/stylize">Try again</a>
+    </div>
+    
+    <div class="pic-box">
+        <img src= "{{ url_for('static', filename=filename) }}" alt="Your pic" width="500" height="450">
+    </div>
+
+{% endblock %}
+
+{% block script %}
+    document.body.style.backgroundColor = "#23262a";
+{% endblock %}
