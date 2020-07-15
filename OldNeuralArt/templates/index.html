@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Neural Art</title>
+{% endblock %}
+
+{% block body %} 
+<h1>Welcome to Neural Art!</h1>
+ <main role="main">
+    <div class="jumbotron" style = "background-image: url('/static/imgs/home.jpg')">
+      <div class="col-sm-8 mx-auto">
+        <h1>STYLIZE YOUR IMAGES</h1>
+        <p>Covert your images into your favourite artists Artwork!</p>
+        <p>
+          <a class="btn btn-primary" href="/stylize" role="button">Click Here &raquo;</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+ <div style = "padding: 50px" class="content-container">
+      
+    <div id="how-it-works" class="container-fluid content">
+        <div class="container">
+            <h1>TURN YOUR PICTURES INTO ART</h1>
+            <p class="lead">We use A Neural Algorithm of Artistic Style intoduced by Leon A. Gatys, Alexander S. Ecker, Matthias Bethge. It draws the style and content of two images, combines them and produce a new image with both style and content.</p>
+
+            </div>
+    </div>
+</div>
+
+ <hr class="featurette-divider">
+
+    <div style = "padding: 50px"class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Content Image </h2>
+        <p class="lead"> # About the content image </p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div  style = "padding: 50px"  class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading"> Style Image </h2>
+        <p class="lead"> # About the style image </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div  style = "padding: 50px"  class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading"> <h2> Submit </h2>
+        <p class="lead"> # about the stylized image</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+
+  </div>
+
+
+{% endblock %}
