@@ -15,7 +15,7 @@
         overflow-x: hidden;
     }
 
-    .sidenav button {
+    label {
         padding: 6px 8px 6px 16px;
         text-decoration: none;
         font-size: 17px;
@@ -25,18 +25,27 @@
         outline: none;
         border: none;
         width: 180px;
+        cursor: pointer;
     }
 
-    .sidenav button:hover {
+    label:hover{
         color: #FFF;
         border-left: 4px solid #b4aa11;
     }
 
-    .submit-btn {
+    .my-btn {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        color: grey;
+        display: block;
+        outline: none;
+        border: none;
+        width: 180px;
         background: linear-gradient(180deg,#f1e41c,#b4aa11);;
     }
 
-    .submit-btn:hover {
+    .my-btn:hover {
         opacity: 1 !important;
         box-shadow: 0 5px 15px rgba(81,113,144,.4);
     }
@@ -89,12 +98,14 @@
 </div>
 
     <div class="sidenav">
-        <form action="/uploader" method="POST" enctype="multipart/form-data">       
-            <button  onclick="document.getElementById('contentFile').click()">Content Image</button>
+        <form action="/uploader" method="POST" enctype="multipart/form-data">
+            <label for = "contentFile">Content Image</label> 
+            <!-- <button  onclick="document.getElementById('contentFile').click()">Content Image</button> -->
                 <input type="file" name="contentFile" id="contentFile" style="display: none;">
-            <button  onclick="document.getElementById('styleFile').click()">Style Image</button>
+            <!-- <button  onclick="document.getElementById('styleFile').click()">Style Image</button> -->
+            <label for = "styleFile">Style Image</label> 
                 <input type="file" name="styleFile" id="styleFile" style="display: none;">
-            <button type="button" class="btn btn-primary submit-btn" onclick="document.getElementById('submitFiles').click()">Submit</button>
+            <button type="button" class="btn btn-primary submit-btn my-btn" onclick="document.getElementById('submitFiles').click()">Submit</button>
                 <!--<input type="submit" value="Upload Image" name="submit" id="submitFiles">  -->         
         </form>
     </div>
