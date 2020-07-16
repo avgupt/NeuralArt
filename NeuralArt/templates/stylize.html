@@ -36,7 +36,7 @@
         background: linear-gradient(180deg,#f1e41c,#b4aa11);;
     }
 
-    .submit:btn {
+    .submit-btn:hover {
         opacity: 1 !important;
         box-shadow: 0 5px 15px rgba(81,113,144,.4);
     }
@@ -91,10 +91,10 @@
     <div class="sidenav">
         <form action="/uploader" method="POST" enctype="multipart/form-data">       
             <button  onclick="document.getElementById('contentFile').click()">Content Image</button>
-                <input type="file" name="contentFile" id="contentFile">
+                <input type="file" name="contentFile" id="contentFile" style="display: none;">
             <button  onclick="document.getElementById('styleFile').click()">Style Image</button>
-                <input type="file" name="styleFile" id="styleFile">
-            <button type="button" class="btn btn-primary" onclick="document.getElementById('submitFiles').click()">Submit</button>
+                <input type="file" name="styleFile" id="styleFile" style="display: none;">
+            <button type="button" class="btn btn-primary submit-btn" onclick="document.getElementById('submitFiles').click()">Submit</button>
                 <!--<input type="submit" value="Upload Image" name="submit" id="submitFiles">  -->         
         </form>
     </div>
