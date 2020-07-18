@@ -66,6 +66,10 @@
         margin: 40px;
     }
 
+    img {
+        display: none;
+        max-width: 100px;
+    }
 {% endblock %}
 
 {% block fullwidth %}
@@ -99,11 +103,11 @@
 
     <div class="sidenav">
         <form action="/uploader" method="POST" enctype="multipart/form-data">
-            <label for = "contentFile">Content Image</label> 
+            <label for = "contentFile" id="contentLabel">Content Image</label> 
             <!-- <button  onclick="document.getElementById('contentFile').click()">Content Image</button> -->
                 <input type="file" name="contentFile" id="contentFile" style="display: none;">
             <!-- <button  onclick="document.getElementById('styleFile').click()">Style Image</button> -->
-            <label for = "styleFile">Style Image</label> 
+            <label for = "styleFile" id="styleLabel">Style Image</label> 
                 <input type="file" name="styleFile" id="styleFile" style="display: none;">
             <!-- <button type="button" class="btn btn-primary submit-btn my-btn" onclick="document.getElementById('submitFiles').click()">Submit</button>-->
                 <input class = "my-btn" type="submit" value="Submit" name="submit" id="submitFiles">      
@@ -115,6 +119,8 @@
             <h2>Welcome to Neural Art Photo Editor</h2>
             <br>
             <p>
+                <img id="contentImg" src="#" class="float-left" />
+                <img id="styleImg" src=# class="float-right" />
                 Choose content and style image
             </p>
         </div>
@@ -124,4 +130,26 @@
 
 {% block script %}
     document.body.style.backgroundColor = "#23262a";
+
+    function readURL(input, imgClass, labelClass) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+          reader.onload = function(e) {
+            $('#'+imgClass).attr('src', e.target.result);
+            document.getElementById(imgClass).style.display = 'block';
+            document.getElementById(labelClass).style.color = '#d9cd17';
+          }
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+      
+      $("#contentFile").change(function() {
+        readURL(this, 'contentImg', 'contentLabel');
+      });
+
+      $("#styleFile").change(function() {
+        readURL(this, 'styleImg', 'styleLabel');
+      });
+
+
 {% endblock %}
