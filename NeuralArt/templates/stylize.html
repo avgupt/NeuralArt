@@ -63,13 +63,19 @@
         color: #FFF;
     }
 
-    .box-text {
+    .welcome-text {
+        margin: 40px;
+    }
+
+    .img-div {
         margin: 40px;
     }
 
     img {
         display: none;
         max-width: 400px;
+        max-height: 400px;
+        margin: 15px;
     }
 {% endblock %}
 
@@ -116,14 +122,16 @@
     </div>
     
     <div class="pic-box">
-        <div class="box-text">
+        <div class="welcome-text">
             <h2>Welcome to Neural Art Photo Editor</h2>
             <br>
             <p>
-                <img id="contentImg" src="#" class="float-left" />
-                <img id="styleImg" src=# class="float-right" />
                 Choose content and style image
             </p>
+        </div>
+        <div class="img-div">
+            <img id="contentImg" src="#" class="float-left" />
+            <img id="styleImg" src=# class="float-right" />
         </div>
     </div>
 
@@ -139,6 +147,7 @@
             $('#'+imgClass).attr('src', e.target.result);
             document.getElementById(imgClass).style.display = 'block';
             document.getElementById(labelClass).style.color = '#d9cd17';
+            $(".welcome-text").empty();
           }
           reader.readAsDataURL(input.files[0]);
         }
