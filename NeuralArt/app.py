@@ -15,6 +15,8 @@ import IPython.display as display
 from flask import Flask, render_template, request, send_file, url_for
 from werkzeug.utils import secure_filename 
 
+import os
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -44,9 +46,13 @@ def model(content, style):
   content_image_path = 'static/' + content + '.jpg'
   style_image_path = 'static/' + style + '.jpg'
 
+
   # Load content and style images (see example in the attached colab).
   content_image = plt.imread(content_image_path)
   style_image = plt.imread(style_image_path)
+
+  os.remove(content_image_path)
+  os.remove(style_image_path)
   # Convert to float32 numpy array, add batch dimension, and normalize to range [0, 1]. Example using numpy:
   content_image = content_image.astype(np.float32)[np.newaxis, ...] / 255.
   style_image = style_image.astype(np.float32)[np.newaxis, ...] / 255.
@@ -86,6 +92,7 @@ def file_upload():
       
       fname = transformed + '.jpg'
       return render_template('result.html', filename=fname)
+      os.remove('static/' + fname)
     return render_template('stylize.html')
 
 	
