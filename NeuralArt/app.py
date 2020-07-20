@@ -13,12 +13,9 @@ import PIL.Image as Image
 import IPython.display as display
 
 from flask import Flask, render_template, request, send_file, url_for
-from werkzeug.utils import secure_filename
-#from flask_sqlalchemy import flask_SQLAlchemy 
+from werkzeug.utils import secure_filename 
 
 app = Flask(__name__)
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////images.db'
-#db = SQLAlchemy(app)
 
 @app.route('/')
 @app.route('/home')
