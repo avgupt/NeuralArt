@@ -76,14 +76,17 @@ def file_upload():
     
     content, style = makevar()
 
-    f = request.files['contentFile']
-    f.save('static/' + content + '.jpg')
-    f2 = request.files['styleFile']
-    f2.save('static/' + style + '.jpg')
-    transformed = model(content, style)
-    
-    fname = transformed + '.jpg'
-    return render_template('result.html', filename=fname)
+    content_file = request.files['contentFile']
+    style_file = request.files['styleFile']
+
+    if content_file and style_file:
+      content_file.save('static/' + content + '.jpg')
+      style_file.save('static/' + style + '.jpg')
+      transformed = model(content, style)
+      
+      fname = transformed + '.jpg'
+      return render_template('result.html', filename=fname)
+    return render_template('stylize.html')
 
 	
 if __name__ == "__main__":
