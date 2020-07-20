@@ -13,12 +13,9 @@ import PIL.Image as Image
 import IPython.display as display
 
 from flask import Flask, render_template, request, send_file, url_for
-from werkzeug.utils import secure_filename
-#from flask_sqlalchemy import flask_SQLAlchemy 
+from werkzeug.utils import secure_filename 
 
 app = Flask(__name__)
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////images.db'
-#db = SQLAlchemy(app)
 
 @app.route('/')
 @app.route('/home')
@@ -79,14 +76,17 @@ def file_upload():
     
     content, style = makevar()
 
-    f = request.files['contentFile']
-    f.save('static/' + content + '.jpg')
-    f2 = request.files['styleFile']
-    f2.save('static/' + style + '.jpg')
-    transformed = model(content, style)
-    
-    fname = transformed + '.jpg'
-    return render_template('result.html', filename=fname)
+    content_file = request.files['contentFile']
+    style_file = request.files['styleFile']
+
+    if content_file and style_file:
+      content_file.save('static/' + content + '.jpg')
+      style_file.save('static/' + style + '.jpg')
+      transformed = model(content, style)
+      
+      fname = transformed + '.jpg'
+      return render_template('result.html', filename=fname)
+    return render_template('stylize.html')
 
 	
 if __name__ == "__main__":
