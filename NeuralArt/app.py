@@ -16,8 +16,10 @@ from flask import Flask, render_template, request, send_file, url_for
 from werkzeug.utils import secure_filename 
 
 import os
+import glob
 
 app = Flask(__name__)
+
 
 @app.route('/')
 @app.route('/home')
@@ -31,7 +33,7 @@ def about():
 @app.route('/stylize')
 def to_upload_page():
     return render_template('stylize.html')
-    
+
 
 def tensor_to_image(tensor):
   tensor = tensor*255
@@ -42,6 +44,7 @@ def tensor_to_image(tensor):
   return Image.fromarray(tensor)
 
 def model(content, style):
+  global transformed
 
   content_image_path = 'static/' + content + '.jpg'
   style_image_path = 'static/' + style + '.jpg'
@@ -92,7 +95,6 @@ def file_upload():
       
       fname = transformed + '.jpg'
       return render_template('result.html', filename=fname)
-      os.remove('static/' + fname)
     return render_template('stylize.html')
 
 	
