@@ -13,12 +13,11 @@ import PIL.Image as Image
 import IPython.display as display
 
 from flask import Flask, render_template, request, send_file, url_for
-from werkzeug.utils import secure_filename
-#from flask_sqlalchemy import flask_SQLAlchemy 
+from werkzeug.utils import secure_filename 
+
+import os
 
 app = Flask(__name__)
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////images.db'
-#db = SQLAlchemy(app)
 
 @app.route('/')
 @app.route('/home')
@@ -47,9 +46,13 @@ def model(content, style):
   content_image_path = 'static/' + content + '.jpg'
   style_image_path = 'static/' + style + '.jpg'
 
+
   # Load content and style images (see example in the attached colab).
   content_image = plt.imread(content_image_path)
   style_image = plt.imread(style_image_path)
+
+  os.remove(content_image_path)
+  os.remove(style_image_path)
   # Convert to float32 numpy array, add batch dimension, and normalize to range [0, 1]. Example using numpy:
   content_image = content_image.astype(np.float32)[np.newaxis, ...] / 255.
   style_image = style_image.astype(np.float32)[np.newaxis, ...] / 255.
@@ -79,14 +82,18 @@ def file_upload():
     
     content, style = makevar()
 
-    f = request.files['contentFile']
-    f.save('static/' + content + '.jpg')
-    f2 = request.files['styleFile']
-    f2.save('static/' + style + '.jpg')
-    transformed = model(content, style)
-    
-    fname = transformed + '.jpg'
-    return render_template('result.html', filename=fname)
+    content_file = request.files['contentFile']
+    style_file = request.files['styleFile']
+
+    if content_file and style_file:
+      content_file.save('static/' + content + '.jpg')
+      style_file.save('static/' + style + '.jpg')
+      transformed = model(content, style)
+      
+      fname = transformed + '.jpg'
+      return render_template('result.html', filename=fname)
+      os.remove('static/' + fname)
+    return render_template('stylize.html')
 
 	
 if __name__ == "__main__":
