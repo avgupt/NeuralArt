@@ -48,6 +48,27 @@
         margin: 40px;
     }
 
+    .download {
+        margin-left: 100px;
+        background-color: #157DEC;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        width: 50%;
+
+    }
+
+    .download:hover {
+
+    text-decoration: none;
+    color: #FFF;
+    background-color: #23262a;
+  }
+
     img {
         margin: 40px;
     }
@@ -89,6 +110,11 @@
     
     <div class="pic-box">
         <img src= "{{ url_for('static', filename=filename) }}" alt="Your pic" width="500" height="450">
+        <br>
+        <br>
+        <!--<button type="button" class="download">-->
+          <a class = "download" href="{{ url_for('static', filename=filename) }}" download>Download</a>
+
     </div>
 
 {% endblock %}
