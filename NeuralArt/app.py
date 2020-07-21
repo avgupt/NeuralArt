@@ -56,6 +56,7 @@ def model(content, style):
 
   os.remove(content_image_path)
   os.remove(style_image_path)
+
   # Convert to float32 numpy array, add batch dimension, and normalize to range [0, 1]. Example using numpy:
   content_image = content_image.astype(np.float32)[np.newaxis, ...] / 255.
   style_image = style_image.astype(np.float32)[np.newaxis, ...] / 255.
@@ -88,14 +89,21 @@ def file_upload():
     content_file = request.files['contentFile']
     style_file = request.files['styleFile']
 
-    if content_file and style_file:
-      content_file.save('static/' + content + '.jpg')
-      style_file.save('static/' + style + '.jpg')
-      transformed = model(content, style)
+
+    try:
+      if content_file and style_file:
+        content_file.save('static/' + content + '.jpg')
+        style_file.save('static/' + style + '.jpg')
+        transformed = model(content, style)
       
-      fname = transformed + '.jpg'
-      return render_template('result.html', filename=fname)
-    return render_template('stylize.html')
+        fname = transformed + '.jpg'
+
+    except:
+
+        fname = 'error.jpg'
+
+    return render_template('result.html', filename=fname)
+    #return render_template('stylize.html')
 
 	
 if __name__ == "__main__":
