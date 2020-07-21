@@ -109,13 +109,13 @@
 </div>
 
     <div class="sidenav">
-        <form action="/uploader" method="POST" enctype="multipart/form-data">
+        <form action="/uploader" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
             <label for = "contentFile" id="contentLabel" class="text-center">Content Image</label> 
             <!-- <button  onclick="document.getElementById('contentFile').click()">Content Image</button> -->
-                <input type="file" name="contentFile" id="contentFile" style="display: none;">
+                <input type="file" name="contentFile" id="contentFile" style="display: none;" onchange="return validateImage()">
             <!-- <button  onclick="document.getElementById('styleFile').click()">Style Image</button> -->
-            <label for = "styleFile" id="styleLabel" class="text-center">Style Image</label> 
-                <input type="file" name="styleFile" id="styleFile" style="display: none;">
+            <label for = "styleFile" id="styleLabel" class="text-center">Style Image</label > 
+                <input type="file" name="styleFile" id="styleFile" style="display: none;" onchange="return validateImage()">
             <!-- <button type="button" class="btn btn-primary submit-btn my-btn" onclick="document.getElementById('submitFiles').click()">Submit</button>-->
                 <input class = "my-btn" type="submit" value="Submit" name="submit" id="submitFiles">      
         </form>
@@ -139,6 +139,32 @@
 
 {% block script %}
     document.body.style.backgroundColor = "#23262a";
+
+    function validateForm() {
+        var empt = document.forms["form1"]["fileToUpload"].value;
+        if (empt == "") {
+            alert("Please upload an image");
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    function validateImage() {
+        var formData = new FormData();
+
+        var file = document.getElementById("fileToUpload").files[0];
+
+        formData.append("Filedata", file);
+        var t = file.type.split('/').pop().toLowerCase();
+        if (t != "jpeg" && t != "jpg" && t != "png" && t != "bmp") {
+            alert('Please select a valid image file');
+            document.getElementById("img").value = '';
+            return false;
+        }
+        else return true;
+    }
 
     function readURL(input, imgClass, labelClass) {
         if (input.files && input.files[0]) {
