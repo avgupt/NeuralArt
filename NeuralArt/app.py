@@ -20,6 +20,24 @@ import glob
 
 app = Flask(__name__)
 
+def delete_files():
+    print("\n\n\n")
+    f = open("filenames.txt", "r")
+    imgs_to_delete = f.readlines()
+    if len(imgs_to_delete) <= 1:
+      print("only one img")
+      pass
+    else:
+      # deleteing the last stylized imgs
+      for img in imgs_to_delete[:-1]:
+        print("deleted " + img)
+        os.remove(img.strip())
+        f.close()
+        f = open("filenames.txt", "w")
+        f.write(imgs_to_delete[-1])
+    f.close()
+    print("\n\n\n")
+
 
 @app.route('/')
 @app.route('/home')
@@ -35,6 +53,8 @@ def to_upload_page():
     return render_template('stylize.html')
 
 
+
+
 def tensor_to_image(tensor):
   tensor = tensor*255
   tensor = np.array(tensor, dtype=np.uint8)
@@ -44,7 +64,7 @@ def tensor_to_image(tensor):
   return Image.fromarray(tensor)
 
 def model(content, style):
-  global transformed
+
 
   content_image_path = 'static/' + content + '.jpg'
   style_image_path = 'static/' + style + '.jpg'
@@ -69,8 +89,13 @@ def model(content, style):
   outputs = hub_module(tf.constant(content_image), tf.constant(style_image))
   stylized_image = outputs[0]
   transformed = str(uuid.uuid4())
+  transformed_img_path = "static/" + transformed + '.jpg'
 
-  tensor_to_image(stylized_image).save("static/" + transformed + '.jpg')
+  f = open("filenames.txt", "a")
+  f.write(transformed_img_path + '\n')
+  f.close()
+
+  tensor_to_image(stylized_image).save(transformed_img_path)
   return transformed
 
 
@@ -89,7 +114,6 @@ def file_upload():
     content_file = request.files['contentFile']
     style_file = request.files['styleFile']
 
-
     try:
       if content_file and style_file:
         content_file.save('static/' + content + '.jpg')
@@ -102,6 +126,8 @@ def file_upload():
 
         fname = 'error.jpg'
 
+    delete_files()
+        
     return render_template('result.html', filename=fname)
     #return render_template('stylize.html')
 
