@@ -37,7 +37,6 @@ def file_upload():
         fname = transformed + '.jpg'
 
     except:
-
         fname = 'error.jpg'
 
     delete_files()
