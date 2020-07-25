@@ -72,9 +72,3 @@ def delete_files():
     f.close()
     print("\n\n\n")
 
-
-def makevar():
-	import uuid
-	content = str(uuid.uuid4())
-	style = str(uuid.uuid4())
-	return content, style
