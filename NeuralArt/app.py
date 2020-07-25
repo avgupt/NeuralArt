@@ -28,20 +28,23 @@ def file_upload():
     content_file = request.files['contentFile']
     style_file = request.files['styleFile']
 
-    try:
-      if content_file and style_file:
-        content_file.save('static/' + content + '.jpg')
-        style_file.save('static/' + style + '.jpg')
-        transformed = model(content, style)
+    if content_file and style_file:
+        try:
+            content_file.save('static/' + content + '.jpg')
+            style_file.save('static/' + style + '.jpg')
+            transformed = model(content, style)
       
-        fname = transformed + '.jpg'
+            fname = transformed + '.jpg'
 
-    except:
-        fname = 'error.jpg'
+        except:
 
-    delete_files()
-        
-    return render_template('result.html', filename=fname)
+            fname = 'error.jpg'
+        delete_files()
+        return render_template('result.html', filename=fname)
+
+    else:
+        return render_template('stylize.html')
+	
 
   
 if __name__ == "__main__":
