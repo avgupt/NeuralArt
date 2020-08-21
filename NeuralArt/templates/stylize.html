@@ -30,7 +30,7 @@
 
     label:hover{
         color: #FFF;
-        border-left: 4px solid #b4aa11;
+        border-left: 4px solid #FAA916;
     }
 
     .my-btn {
@@ -42,7 +42,7 @@
         outline: none;
         border: none;
         width: 180px;
-        background: linear-gradient(180deg,#f1e41c,#b4aa11);;
+        background: linear-gradient(180deg,#FAA916,#b4aa11);;
     }
 
     .my-btn:hover {
@@ -173,7 +173,7 @@
           reader.onload = function(e) {
             $('#'+imgClass).attr('src', e.target.result);
             document.getElementById(imgClass).style.display = 'block';
-            document.getElementById(labelClass).style.color = '#d9cd17';
+            document.getElementById(labelClass).style.color = '#FAA916';
             $(".welcome-text").empty();
           }
           reader.readAsDataURL(input.files[0]);
