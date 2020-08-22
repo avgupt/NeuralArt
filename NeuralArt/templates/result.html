@@ -37,16 +37,14 @@
 
     <div class="sidenav">
         <a href="/stylize">Try again</a>
+        <a style="padding-top:15px" href="{{ url_for('static', filename=filename) }}" download>Download</a>
     </div>
-    
-    <div class="pic-box">
-        <img src= "{{ url_for('static', filename=filename) }}" alt="Your pic" >
-        <br>
-        <br>
-        <!--<button type="button" class="download">-->
-          <a class = "download" href="{{ url_for('static', filename=filename) }}" download>Download</a>
 
+    <div class="pic-box" style="max-width:1300px; max-height:700px">
+        <img style= "object-fit: contain;" src= "{{ url_for('static', filename=filename) }}"  alt="Stylized picture">
     </div>
+
+
 
 {% endblock %}
 
