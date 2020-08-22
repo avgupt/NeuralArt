@@ -1,0 +1,67 @@
+.sidenav {
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    margin: 15px;
+    border-radius: 8px;
+    background: #343a40;
+    overflow-x: hidden;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: #343a40;
+    color: grey;
+    display: block;
+    outline: none;
+    border: none;
+    width: 180px;
+}
+
+.sidenav a:hover {
+    color: #FFF;
+    border-left: 4px solid #b4aa11;
+}
+
+.pic-box {
+    position: fixed;
+    z-index: 1;
+    margin-top: 15px;
+    margin-left: 210px;
+    border-radius: 8px;
+    background: #343a40;
+    overflow-x: hidden;
+    padding: 8px 0;
+    color: #FFF;
+}
+
+.box-text {
+    margin: 40px;
+}
+
+.download {
+    margin-left: 100px;
+    background-color: #157DEC;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 50%;
+
+}
+
+.download:hover {
+
+text-decoration: none;
+color: #FFF;
+background-color: #23262a;
+}
+
+img {
+    margin: 40px;
+}
