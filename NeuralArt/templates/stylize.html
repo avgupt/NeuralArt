@@ -37,20 +37,20 @@
 
     <div class="sidenav">
         <form action="/uploader" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
-            <label for = "contentFile" id="contentLabel" class="text-center">Content Image</label> 
+            <label for = "contentFile" id="contentLabel" class="text-center">Content Image</label>
                 <input type="file" name="contentFile" id="contentFile" style="display: none;" onchange="return validateImage()">
-            <label for = "styleFile" id="styleLabel" class="text-center">Style Image</label > 
+            <label for = "styleFile" id="styleLabel" class="text-center">Style Image</label >
                 <input type="file" name="styleFile" id="styleFile" style="display: none;" onchange="return validateImage()">
-                <input class = "my-btn" type="submit" value="Submit" name="submit" id="submitFiles">      
+                <input class = "my-btn" type="submit" value="Submit" name="submit" id="submitFiles">
         </form>
     </div>
-    
+
     <div class="pic-box">
         <div class="welcome-text">
             <h2>Welcome to the Neural Art Photo Editor.</h2>
             <br>
             <p>
-                There are no images selected. Please open a content image and a style image to start stylizing.
+                There are no images selected. Please upload a content image and a style image to start stylizing.
             </p>
             <br>
         </div>
