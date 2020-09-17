@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.6.25)  17 SEP 2020 12:32
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.6.25)  17 SEP 2020 12:37
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -891,7 +891,7 @@ Here is how much of LuaTeX's memory you used:
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/pub
 lic/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmss8.pfb>
-Output written on main.pdf (11 pages, 436965 bytes).
+Output written on main.pdf (11 pages, 436306 bytes).
 
 PDF statistics: 345 PDF objects out of 1000 (max. 8388607)
  312 compressed objects within 4 object streams
