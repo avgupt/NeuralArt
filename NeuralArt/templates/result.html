@@ -3,7 +3,7 @@
 {% block title %} Stylize {% endblock %}
 
 {% block css %}
-    @import url("../static/css/result.css")
+    @import url("../static/css/result1.css")
 {% endblock %}
 
 {% block fullwidth %}
@@ -40,8 +40,8 @@
         <a style="padding-top:15px" href="{{ url_for('static', filename=filename) }}" download>Download</a>
     </div>
 
-    <div class="pic-box" style="max-width:1300px; max-height:700px">
-        <img style= "object-fit: contain;" src= "{{ url_for('static', filename=filename) }}"  alt="Stylized picture">
+    <div class="pic-box">
+      <img style="max-height: 512px;" src= "{{ url_for('static', filename=filename) }}"  alt="Stylized picture">
     </div>
 
 
