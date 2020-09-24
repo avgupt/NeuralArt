@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.6.25)  24 SEP 2020 17:41
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.6.25)  24 SEP 2020 17:42
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -857,7 +857,7 @@ Package luatex.def Info: sshivangi.jpg  used on input line 38.
 File: vnaaz.jpg Graphic file (type jpg)
 <use vnaaz.jpg>
 Package luatex.def Info: vnaaz.jpg  used on input line 38.
-(luatex.def)             Requested size: 79.66771pt x 117.73233pt.
+(luatex.def)             Requested size: 76.82243pt x 113.5281pt.
  [3
 
 <./Avishi.jpg><./sshivangi.jpg><./vnaaz.jpg>] [4
