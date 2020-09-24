@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.6.25)  24 SEP 2020 17:39
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.6.25)  24 SEP 2020 17:41
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -852,12 +852,12 @@ LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <7> not available
 File: sshivangi.jpg Graphic file (type jpg)
 <use sshivangi.jpg>
 Package luatex.def Info: sshivangi.jpg  used on input line 38.
-(luatex.def)             Requested size: 85.35826pt x 104.63626pt.
+(luatex.def)             Requested size: 91.04881pt x 111.61201pt.
 <vnaaz.jpg, id=81, 305.64188pt x 451.6875pt>
 File: vnaaz.jpg Graphic file (type jpg)
 <use vnaaz.jpg>
 Package luatex.def Info: vnaaz.jpg  used on input line 38.
-(luatex.def)             Requested size: 85.35826pt x 126.14081pt.
+(luatex.def)             Requested size: 79.66771pt x 117.73233pt.
  [3
 
 <./Avishi.jpg><./sshivangi.jpg><./vnaaz.jpg>] [4
@@ -934,7 +934,7 @@ Here is how much of LuaTeX's memory you used:
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/pub
 lic/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmss8.pfb>
-Output written on main.pdf (14 pages, 1019607 bytes).
+Output written on main.pdf (14 pages, 1019605 bytes).
 
 PDF statistics: 429 PDF objects out of 1000 (max. 8388607)
  389 compressed objects within 4 object streams
