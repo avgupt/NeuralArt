@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.6.25)  24 SEP 2020 13:37
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.6.25)  24 SEP 2020 13:45
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -823,31 +823,11 @@ Dictionary: translator-numbers-dictionary, Language: English
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-theorem-dictiona
 ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (./main.nav)
-Overfull \hbox (111.32333pt too wide) in paragraph at lines 12--12
- [][]|  []\OT1/lmss/m/n/6 0/13|  
- []
+) (./main.nav) [1
 
-[1
+] [2
 
-]
-Overfull \hbox (18.40364pt too wide) in paragraph at lines 23--23
- []\OT1/lmss/m/n/14.4 262626262626262626262626262626262626262626262626 
- []
-
-
-Overfull \hbox (111.32333pt too wide) has occurred while \output is active
- [][]|  []\OT1/lmss/m/n/6 2/13|  
- []
-
-[2
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (111.32333pt too wide) has occurred while \output is active
- [][]|  []\OT1/lmss/m/n/6 3/13|  
- []
-
-[3
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [3
 
 ]
 <baby.jpeg, id=106, 536.19678pt x 613.12935pt>
@@ -855,12 +835,7 @@ File: baby.jpeg Graphic file (type jpg)
 <use baby.jpeg>
 Package luatex.def Info: baby.jpeg  used on input line 37.
 (luatex.def)             Requested size: 170.71652pt x 195.20435pt.
-
-Overfull \hbox (111.32333pt too wide) has occurred while \output is active
- [][]|  []\OT1/lmss/m/n/6 4/13|  
- []
-
-[4
+ [4
 
 <./baby.jpeg>]
 ! Undefined control sequence.
@@ -869,11 +844,6 @@ Overfull \hbox (111.32333pt too wide) has occurred while \output is active
 l.55 \end{frame}
               
 ? 
-
-Overfull \hbox (111.32333pt too wide) has occurred while \output is active
- [][]|  []\OT1/lmss/m/n/6 5/13|  
- []
-
 [5
 
 ]
@@ -882,61 +852,21 @@ File: exp.jpg Graphic file (type jpg)
 <use exp.jpg>
 Package luatex.def Info: exp.jpg  used on input line 62.
 (luatex.def)             Requested size: 227.62204pt x 155.61807pt.
+ [6
 
-Overfull \hbox (111.32333pt too wide) has occurred while \output is active
- [][]|  []\OT1/lmss/m/n/6 6/13|  
- []
+<./exp.jpg>] [7
 
-[6
+] [8
 
-<./exp.jpg>]
-Overfull \hbox (111.32333pt too wide) has occurred while \output is active
- [][]|  []\OT1/lmss/m/n/6 7/13|  
- []
+] [9
 
-[7
+] [10
 
-]
-Overfull \hbox (111.32333pt too wide) has occurred while \output is active
- [][]|  []\OT1/lmss/m/n/6 8/13|  
- []
+] [11
 
-[8
+] [12
 
-]
-Overfull \hbox (111.32333pt too wide) has occurred while \output is active
- [][]|  []\OT1/lmss/m/n/6 9/13|  
- []
-
-[9
-
-]
-Overfull \hbox (114.51083pt too wide) has occurred while \output is active
- [][]|  []\OT1/lmss/m/n/6 10/13|  
- []
-
-[10
-
-]
-Overfull \hbox (114.51083pt too wide) has occurred while \output is active
- [][]|  []\OT1/lmss/m/n/6 11/13|  
- []
-
-[11
-
-]
-Overfull \hbox (114.51083pt too wide) has occurred while \output is active
- [][]|  []\OT1/lmss/m/n/6 12/13|  
- []
-
-[12
-
-]
-Overfull \hbox (114.51083pt too wide) has occurred while \output is active
- [][]|  []\OT1/lmss/m/n/6 13/13|  
- []
-
-[13
+] [13
 
 ]
 \tf@nav=\write6
@@ -963,7 +893,7 @@ Here is how much of LuaTeX's memory you used:
  830 words of node memory still in use:
    13 hlist, 6 vlist, 2 rule, 1 local_par, 21 glue, 2 kern, 11 penalty, 9 glyph,
  57 glue_spec, 3 write, 6 pdf_colorstack nodes
-   avail lists: 1:1,2:27,3:292,4:160,5:118,6:43,7:871,8:51,9:242,10:12,11:54,12:
+   avail lists: 1:1,2:27,3:290,4:160,5:118,6:43,7:825,8:51,9:240,10:12,11:54,12:
 1
  21151 multiletter control sequences out of 65536+600000
  22 fonts using 922279 bytes
@@ -971,7 +901,7 @@ Here is how much of LuaTeX's memory you used:
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/pub
 lic/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmss8.pfb>
-Output written on main.pdf (13 pages, 493541 bytes).
+Output written on main.pdf (13 pages, 493482 bytes).
 
 PDF statistics: 399 PDF objects out of 1000 (max. 8388607)
  363 compressed objects within 4 object streams
