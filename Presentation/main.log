@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.6.25)  26 SEP 2020 15:00
+This is LuaTeX, Version 1.07.0 (TeX Live 2019/dev/Debian)  (format=lualatex 2020.6.25)  2 OCT 2020 14:06
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -823,51 +823,48 @@ Dictionary: translator-numbers-dictionary, Language: English
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-theorem-dictiona
 ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (./main.nav)
-<Avishi.jpg, id=14, 421.575pt x 546.04pt>
+) (./main.nav) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<Avishi.jpg, id=53, 421.575pt x 546.04pt>
 File: Avishi.jpg Graphic file (type jpg)
 <use Avishi.jpg>
-Package luatex.def Info: Avishi.jpg  used on input line 36.
+Package luatex.def Info: Avishi.jpg  used on input line 39.
 (luatex.def)             Requested size: 85.35826pt x 110.55583pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 36.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Try loading font information for U+msa on input line 39.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 36.
+LaTeX Font Info:    Try loading font information for U+msb on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 36.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 39.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 36.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 39.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <7> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 36.
-<sshivangi.jpg, id=15, 1084.05pt x 1328.965pt>
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 39.
+<sshivangi.jpg, id=54, 1084.05pt x 1328.965pt>
 File: sshivangi.jpg Graphic file (type jpg)
 <use sshivangi.jpg>
-Package luatex.def Info: sshivangi.jpg  used on input line 36.
+Package luatex.def Info: sshivangi.jpg  used on input line 39.
 (luatex.def)             Requested size: 91.04881pt x 111.61201pt.
-<vnaaz.jpg, id=16, 305.64188pt x 451.6875pt>
+<vnaaz.jpg, id=55, 305.64188pt x 451.6875pt>
 File: vnaaz.jpg Graphic file (type jpg)
 <use vnaaz.jpg>
-Package luatex.def Info: vnaaz.jpg  used on input line 36.
+Package luatex.def Info: vnaaz.jpg  used on input line 39.
 (luatex.def)             Requested size: 76.82243pt x 113.5281pt.
- [1
+ [2
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}<./Avishi.jpg><./sshivangi.jp
-g><./vnaaz.jpg>]
-[2
-
-] [3
+<./Avishi.jpg><./sshivangi.jpg><./vnaaz.jpg>] [3
 
 ]
 <baby.jpeg, id=110, 536.19678pt x 613.12935pt>
 File: baby.jpeg Graphic file (type jpg)
 <use baby.jpeg>
-Package luatex.def Info: baby.jpeg  used on input line 54.
+Package luatex.def Info: baby.jpeg  used on input line 53.
 (luatex.def)             Requested size: 170.71652pt x 195.20435pt.
  [4
 
@@ -875,7 +872,7 @@ Package luatex.def Info: baby.jpeg  used on input line 54.
 ! Undefined control sequence.
 \beamer@doifinframe ...he content image, but \say 
                                                   {painted} in the style of ...
-l.72 \end{frame}
+l.71 \end{frame}
               
 ? 
 [5
@@ -884,7 +881,7 @@ l.72 \end{frame}
 <exp.jpg, id=170, 413.1435pt x 282.45525pt>
 File: exp.jpg Graphic file (type jpg)
 <use exp.jpg>
-Package luatex.def Info: exp.jpg  used on input line 79.
+Package luatex.def Info: exp.jpg  used on input line 78.
 (luatex.def)             Requested size: 227.62204pt x 155.61807pt.
  [6
 
@@ -904,7 +901,7 @@ Package luatex.def Info: exp.jpg  used on input line 79.
 <Collage.jpg, id=363, 4111.36pt x 4111.36pt>
 File: Collage.jpg Graphic file (type jpg)
 <use Collage.jpg>
-Package luatex.def Info: Collage.jpg  used on input line 140.
+Package luatex.def Info: Collage.jpg  used on input line 139.
 (luatex.def)             Requested size: 241.84842pt x 241.84042pt.
  [13
 
@@ -922,12 +919,12 @@ Package luatex.def Info: Collage.jpg  used on input line 140.
 \tf@snm=\write8
 
 \openout8 = main.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 159.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 159.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
 
 (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 159.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 159.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 158.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 158.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
@@ -938,7 +935,7 @@ Here is how much of LuaTeX's memory you used:
  830 words of node memory still in use:
    13 hlist, 6 vlist, 2 rule, 1 local_par, 21 glue, 2 kern, 11 penalty, 9 glyph,
  57 glue_spec, 3 write, 6 pdf_colorstack nodes
-   avail lists: 1:1,2:27,3:290,4:160,5:118,6:53,7:825,8:51,9:249,10:12,11:49,12:
+   avail lists: 1:1,2:27,3:290,4:160,5:118,6:53,7:825,8:51,9:248,10:12,11:50,12:
 1
  21198 multiletter control sequences out of 65536+600000
  48 fonts using 1996747 bytes
@@ -946,7 +943,7 @@ Here is how much of LuaTeX's memory you used:
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/pub
 lic/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmss8.pfb>
-Output written on main.pdf (15 pages, 22256848 bytes).
+Output written on main.pdf (15 pages, 22256832 bytes).
 
 PDF statistics: 459 PDF objects out of 1000 (max. 8388607)
  416 compressed objects within 5 object streams
